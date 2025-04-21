@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080" # Map frontend to localhost:8080
+    depends_on:
+      - backend
+    environment:
+      - BACKEND_URL=http://backend:3000
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000" # Map backend to localhost:3000
+    environment:
+      - NODE_ENV=production
+      - JWT_SECRET=your_jwt_secret_key_here
+    volumes:
+      - ./data:/app/data # Persist backend data (e.g., SQLite database)
+
+volumes:
+  data:

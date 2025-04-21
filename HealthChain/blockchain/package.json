@@ -1,0 +1,13 @@
+{
+  "name": "healthchain-blockchain",
+  "version": "1.0.0",
+  "description": "Blockchain service for HealthChain",
+  "main": "Blockchain.js",
+  "scripts": {
+    "start": "node Blockchain.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "crypto-js": "^4.1.1"
+  }
+} 

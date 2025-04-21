@@ -1,0 +1,12 @@
+{
+  "name": "healthchain-frontend",
+  "version": "1.0.0",
+  "description": "Frontend service for HealthChain",
+  "scripts": {
+    "start": "serve -s .",
+    "build": "echo 'No build step required for static files'"
+  },
+  "dependencies": {
+    "serve": "^13.0.2"
+  }
+} 

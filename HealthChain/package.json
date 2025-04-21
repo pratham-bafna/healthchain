@@ -1,0 +1,17 @@
+{
+  "name": "healthchain",
+  "version": "1.0.0",
+  "description": "A blockchain-based healthcare management system",
+  "main": "src/blockchain/Blockchain.js",
+  "scripts": {
+    "start": "node src/blockchain/blockchain_demo.js",
+    "test": "jest",
+    "docs": "node scripts/generate-docs.js"
+  },
+  "directories": {
+    "src": "src",
+    "config": "config",
+    "docs": "docs",
+    "tests": "tests"
+  }
+}
