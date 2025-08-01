@@ -70,7 +70,3 @@ This project implements various security measures to ensure HIPAA compliance and
 - Role-based access control
 - Audit logging
 - Data backup and recovery procedures
-
-## License
-
-MIT License - see LICENSE file for details 
